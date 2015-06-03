@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,7 +15,61 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQE-NX-4uE">
+                                <rect key="frame" x="240" y="74" width="121" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="twf-0a-pLn"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button1Pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IOi-Qo-nef"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wW5-ch-3h5">
+                                <rect key="frame" x="240" y="229" width="121" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button3Pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6sQ-ny-IIT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZm-LB-gEx">
+                                <rect key="frame" x="240" y="310" width="121" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button4Pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="flp-GR-A2a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YM-as-Set">
+                                <rect key="frame" x="240" y="146" width="121" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button2Pressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wBw-Tz-3YM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wW5-ch-3h5" firstAttribute="trailing" secondItem="LZm-LB-gEx" secondAttribute="trailing" id="5Wy-20-jaj"/>
+                            <constraint firstItem="LZm-LB-gEx" firstAttribute="top" secondItem="wW5-ch-3h5" secondAttribute="bottom" constant="51" id="BQB-aB-NDV"/>
+                            <constraint firstItem="3YM-as-Set" firstAttribute="leading" secondItem="NQE-NX-4uE" secondAttribute="leading" id="Bbq-jV-eCw"/>
+                            <constraint firstItem="wW5-ch-3h5" firstAttribute="top" secondItem="3YM-as-Set" secondAttribute="bottom" constant="53" id="EWq-fV-IA9"/>
+                            <constraint firstItem="3YM-as-Set" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="KqP-WH-xu8"/>
+                            <constraint firstItem="3YM-as-Set" firstAttribute="trailing" secondItem="NQE-NX-4uE" secondAttribute="trailing" id="gE2-Ka-KD6"/>
+                            <constraint firstItem="3YM-as-Set" firstAttribute="top" secondItem="NQE-NX-4uE" secondAttribute="bottom" constant="42" id="grE-fO-q2r"/>
+                            <constraint firstItem="3YM-as-Set" firstAttribute="trailing" secondItem="wW5-ch-3h5" secondAttribute="trailing" id="lsL-OS-S3s"/>
+                            <constraint firstItem="wW5-ch-3h5" firstAttribute="leading" secondItem="3YM-as-Set" secondAttribute="leading" id="qhQ-u0-bHM"/>
+                            <constraint firstItem="LZm-LB-gEx" firstAttribute="leading" secondItem="wW5-ch-3h5" secondAttribute="leading" id="sUg-k7-q8r"/>
+                            <constraint firstItem="NQE-NX-4uE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="54" id="y5b-gu-7Qg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
